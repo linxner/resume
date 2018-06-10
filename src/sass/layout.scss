@@ -17,6 +17,7 @@ html {
     top: 0;
     box-shadow: 1px 1px #ddd;
     background-color: $main-background-color;
+    z-index: 99;
     .top-content {
         width: 1100px;
         height: 50px;
@@ -106,29 +107,35 @@ html {
     }
 }
 
+.cl {
+    clear: both;
+    zoom: 1;
+}
+
+.title {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .line {
+        display: block;
+        width: 200px;
+        box-sizing: border-box;
+        padding: 5px;
+        border-bottom: 3px solid $nav-color;
+    }
+}
+
 .container {
     width: 1100px;
     margin: 50px auto;
     .education {
         width: 100%;
-        .title {
-            width: 100%;
-            height: 200px;
-            text-align: center;
-            margin-top: 50px;
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            .line {
-                display: block;
-                width: 200px;
-                box-sizing: border-box;
-                padding: 5px;
-                border-bottom: 3px solid $nav-color;
-            }
-        }
         .edu-content {
             width: 100%;
             position: relative;
@@ -169,22 +176,132 @@ html {
     .tec-stack {
         width: 100%;
         height: 400px;
-        .wrapper{
+        .wrapper {
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            circle {
-                stroke-width: 8px;
-                transform-origin: center;
-                &.out-circle {
-                    transform: scale(.9);
-                    stroke: #fff;
+            text-align: center;
+            .title {
+                height: 40px;
+                font-size: 18px;
+                margin-top: 40px;
+            }
+            .out {
+                width: 80%;
+                margin: 0 auto;
+                background-color: #EBEEF5;
+                margin-top: 60px;
+                display: flex;
+                justify-content: center;
+                .bg1 {
+                    width: 20%;
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 60px;
+                    padding: 30px 0;
+                    text-align: right;
+                    font-size: 14px;
+                    color: $title-text-color;
                 }
-                &.inner-circle {
-                    transform: scale(.9) rotate(-90deg);
-                    stroke: $main-color;
-                    animation: rotate 2s ease 300ms;
+                .bg2 {
+                    width: 80%;
+                    margin-left: 20px;
+                    padding: 40px 0 0;
+                    border-width: 0 0 1px 1px;
+                    border-color: $title-text-color;
+                    border-style: solid;
+                    ul li {
+                        height: 40px;
+                        margin-bottom: 20px;
+                        &:nth-of-type(1) {
+                            width: 90%;
+                            background-color: red;
+                            animation: go 3s ease;
+                            @keyframes go {
+                                0% {
+                                    width: 0;
+                                    background-color: #fff;
+                                }
+                                100% {
+                                    width: 90%;
+                                    background-color: red;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            width: 85%;
+                            background-color: orange;
+                            animation: go1 3s ease;
+                            @keyframes go1 {
+                                0% {
+                                    width: 0;
+                                    background-color: #fff;
+                                }
+                                100% {
+                                    width: 85%;
+                                    background-color: orange;
+                                }
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            width: 80%;
+                            background-color: green;
+                            animation: go2 3s ease;
+                            @keyframes go2 {
+                                0% {
+                                    width: 0;
+                                    background-color: #fff;
+                                }
+                                100% {
+                                    width: 80%;
+                                    background-color: green;
+                                }
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            width: 70%;
+                            background-color: blue;
+                            animation: go3 3s ease;
+                            @keyframes go3 {
+                                0% {
+                                    width: 0;
+                                    background-color: #fff;
+                                }
+                                100% {
+                                    width: 70%;
+                                    background-color: blue;
+                                }
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            width: 77%;
+                            background-color: violet;
+                            animation: go4 3s ease;
+                            @keyframes go4 {
+                                0% {
+                                    width: 0;
+                                    background-color: #fff;
+                                }
+                                100% {
+                                    width: 77%;
+                                    background-color: violet;
+                                }
+                            }
+                        }
+                        &:nth-of-type(6) {
+                            width: 60%;
+                            background-color: purple;
+                            animation: go5 3s ease;
+                            @keyframes go5 {
+                                0% {
+                                    width: 0;
+                                    background-color: #fff;
+                                }
+                                100% {
+                                    width: 60%;
+                                    background-color: purple;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -200,11 +317,11 @@ html {
     }
 }
 
-@keyframes rotate {
+@keyframes chart {
     0% {
-        stroke-dashoffset: 314;
+        background-color: #5fbac0;
     }
     100% {
-        stroke-dashoffset: 20;
+        background-color: #400642;
     }
 }
