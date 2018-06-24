@@ -2,7 +2,8 @@
 body,
 html {
   width: 100%;
-  font-family: "微软雅黑", sans-serif; }
+  font-family: "微软雅黑", sans-serif;
+  font-size: 14px; }
 
 .top {
   width: 100%;
@@ -88,7 +89,6 @@ html {
   width: 100%;
   height: 200px;
   text-align: center;
-  margin-top: 50px;
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@ html {
             line-height: 2; }
   .container .tec-stack {
     width: 100%;
-    height: 400px; }
+    margin-bottom: 50px; }
     .container .tec-stack .wrapper {
       width: 100%;
       text-align: center; }
@@ -144,8 +144,7 @@ html {
         font-size: 18px;
         margin-top: 40px; }
       .container .tec-stack .wrapper .out {
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
         background-color: #EBEEF5;
         margin-top: 60px;
         display: flex;
@@ -162,10 +161,7 @@ html {
         .container .tec-stack .wrapper .out .bg2 {
           width: 80%;
           margin-left: 20px;
-          padding: 40px 0 0;
-          border-width: 0 0 1px 1px;
-          border-color: #606266;
-          border-style: solid; }
+          padding: 40px 0 0; }
           .container .tec-stack .wrapper .out .bg2 ul li {
             height: 40px;
             margin-bottom: 20px; }
@@ -241,6 +237,36 @@ html {
   100% {
     width: 60%;
     background-color: purple; } }
+  .container .project {
+    width: 100%;
+    border-top: 2px dashed #E4E7ED; }
+    .container .project .pro-title {
+      font-size: 16px;
+      display: flex;
+      align-items: center; }
+      .container .project .pro-title i {
+        color: #67C23A;
+        margin-right: 10px; }
+      .container .project .pro-title span {
+        color: #F56C6C; }
+    .container .project .pro-list {
+      width: 100%;
+      text-indent: 25px;
+      line-height: 2;
+      margin-top: 10px; }
+      .container .project .pro-list .list {
+        width: 100%;
+        display: flex; }
+        .container .project .pro-list .list .word {
+          text-indent: 0px; }
+          .container .project .pro-list .list .word .link {
+            text-indent: 0;
+            vertical-align: top; }
+            .container .project .pro-list .list .word .link a {
+              color: #409EFF;
+              text-decoration: underline; }
+        .container .project .pro-list .list .dec {
+          white-space: nowrap; }
 
 @keyframes show {
   0% {
