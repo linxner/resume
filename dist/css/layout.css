@@ -237,34 +237,55 @@ html {
   100% {
     width: 60%;
     background-color: purple; } }
+  .container .work,
+  .container .self,
   .container .project {
     width: 100%;
-    border-top: 2px dashed #E4E7ED; }
+    border-top: 2px dashed #E4E7ED;
+    margin-top: 30px; }
+    .container .work .pro-title,
+    .container .self .pro-title,
     .container .project .pro-title {
       font-size: 16px;
       display: flex;
       align-items: center; }
+      .container .work .pro-title i,
+      .container .self .pro-title i,
       .container .project .pro-title i {
         color: #67C23A;
         margin-right: 10px; }
+      .container .work .pro-title span,
+      .container .self .pro-title span,
       .container .project .pro-title span {
         color: #F56C6C; }
+    .container .work .pro-list,
+    .container .self .pro-list,
     .container .project .pro-list {
       width: 100%;
       text-indent: 25px;
       line-height: 2;
       margin-top: 10px; }
+      .container .work .pro-list .list,
+      .container .self .pro-list .list,
       .container .project .pro-list .list {
         width: 100%;
         display: flex; }
+        .container .work .pro-list .list .word,
+        .container .self .pro-list .list .word,
         .container .project .pro-list .list .word {
           text-indent: 0px; }
+          .container .work .pro-list .list .word .link,
+          .container .self .pro-list .list .word .link,
           .container .project .pro-list .list .word .link {
             text-indent: 0;
             vertical-align: top; }
+            .container .work .pro-list .list .word .link a,
+            .container .self .pro-list .list .word .link a,
             .container .project .pro-list .list .word .link a {
               color: #409EFF;
               text-decoration: underline; }
+        .container .work .pro-list .list .dec,
+        .container .self .pro-list .list .dec,
         .container .project .pro-list .list .dec {
           white-space: nowrap; }
 
