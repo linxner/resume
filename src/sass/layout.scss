@@ -253,7 +253,7 @@ html {
                             }
                         }
                         &:nth-of-type(4) {
-                            width: 70%;
+                            width: 90%;
                             background-color: blue;
                             animation: go3 3s ease;
                             @keyframes go3 {
@@ -262,12 +262,27 @@ html {
                                     background-color: #fff;
                                 }
                                 100% {
-                                    width: 70%;
+                                    width: 90%;
                                     background-color: blue;
                                 }
                             }
                         }
                         &:nth-of-type(5) {
+                            width: 80%;
+                            background-color: rosybrown;
+                            animation: go8 3s ease;
+                            @keyframes go8 {
+                                0% {
+                                    width: 0;
+                                    background-color: #fff;
+                                }
+                                100% {
+                                    width: 80%;
+                                    background-color: rosybrown;
+                                }
+                            }
+                        }
+                        &:nth-of-type(6) {
                             width: 77%;
                             background-color: violet;
                             animation: go4 3s ease;
@@ -282,7 +297,7 @@ html {
                                 }
                             }
                         }
-                        &:nth-of-type(6) {
+                        &:nth-of-type(7) {
                             width: 60%;
                             background-color: purple;
                             animation: go5 3s ease;
@@ -329,6 +344,7 @@ html {
                 width: 100%;
                 display: flex;
                 .word {
+                    max-width: 800px;
                     text-indent: 0px;
                     .link {
                         text-indent: 0;
